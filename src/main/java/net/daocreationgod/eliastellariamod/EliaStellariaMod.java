@@ -1,6 +1,8 @@
 package net.daocreationgod.eliastellariamod;
 
 import com.mojang.logging.LogUtils;
+import net.daocreationgod.eliastellariamod.item.ModCreativeModeTabs;
+import net.daocreationgod.eliastellariamod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -12,7 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-//Update
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(EliaStellariaMod.MOD_ID)
 public class EliaStellariaMod {
@@ -25,6 +27,7 @@ public class EliaStellariaMod {
     public EliaStellariaMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -37,7 +40,11 @@ public class EliaStellariaMod {
 
     private void commonSetup(final FMLCommonSetupEvent event){}
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event) {}
+    private void addCreative(CreativeModeTabEvent.BuildContents event) {
+        if (event.getTab() == ModCreativeModeTabs.ELIA_STELLARIA_MOD_TAB) {
+            event.accept(ModItems.NAME_WITH_UNDERSCORE_FOR_SPACES);
+        }
+    }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
