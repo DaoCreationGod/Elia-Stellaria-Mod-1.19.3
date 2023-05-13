@@ -1,6 +1,7 @@
 package net.daocreationgod.eliastellariamod;
 
 import com.mojang.logging.LogUtils;
+import net.daocreationgod.eliastellariamod.block.ModBlocks;
 import net.daocreationgod.eliastellariamod.item.ModCreativeModeTabs;
 import net.daocreationgod.eliastellariamod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -28,6 +29,7 @@ public class EliaStellariaMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -43,6 +45,7 @@ public class EliaStellariaMod {
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == ModCreativeModeTabs.ELIA_STELLARIA_MOD_TAB) {
             event.accept(ModItems.NAME_WITH_UNDERSCORE_FOR_SPACES);
+            event.accept(ModBlocks.BANANA_TREE_WOOD);
         }
     }
 
