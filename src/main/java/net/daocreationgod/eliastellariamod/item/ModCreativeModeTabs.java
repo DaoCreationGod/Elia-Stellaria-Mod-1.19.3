@@ -1,6 +1,7 @@
 package net.daocreationgod.eliastellariamod.item;
 
 import net.daocreationgod.eliastellariamod.EliaStellariaMod;
+import net.daocreationgod.eliastellariamod.block.ModBlocks;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,6 +17,6 @@ public class ModCreativeModeTabs {
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event){
-        ELIA_STELLARIA_MOD_TAB = event.registerCreativeModeTab(new ResourceLocation(EliaStellariaMod.MOD_ID, "elia_stellaria_mod_tab"), builder -> builder.icon(()-> new ItemStack(ModItems.NAME_WITH_UNDERSCORE_FOR_SPACES.get())).title(Component.translatable("creativemodetab.elia_stellaria_mod_tab")));
+        ELIA_STELLARIA_MOD_TAB = event.registerCreativeModeTab(new ResourceLocation(EliaStellariaMod.MOD_ID, "elia_stellaria_mod_tab"), builder -> builder.icon(()-> new ItemStack(ModBlocks.FALLEN_STAR_BLOCK.get())).title(Component.translatable("creativemodetab.elia_stellaria_mod_tab")));
     }
 }

@@ -44,8 +44,18 @@ public class EliaStellariaMod {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == ModCreativeModeTabs.ELIA_STELLARIA_MOD_TAB) {
-            event.accept(ModItems.NAME_WITH_UNDERSCORE_FOR_SPACES);
             event.accept(ModBlocks.BANANA_TREE_WOOD);
+            event.accept(ModBlocks.MAGIC_BANANA_TREE_WOOD);
+            event.accept(ModBlocks.HATEFUL_BANANA_TREE_WOOD);
+            event.accept(ModBlocks.HATEFUL_MAGIC_BANANA_TREE_WOOD);
+            event.accept(ModBlocks.FALLEN_STAR_BLOCK);
+            event.accept(ModBlocks.HATEFUL_FALLEN_STAR_BLOCK);
+            event.accept(ModBlocks.ELIUM_BLOCK);
+            event.accept(ModBlocks.ELIUM_ORE_BLOCK);
+            event.accept(ModBlocks.NETHER_ELIUM_ORE_BLOCK);
+            event.accept(ModBlocks.DEEPSLATE_ELIUM_ORE_BLOCK);
+            event.accept(ModItems.RAW_ELIUM);
+            event.accept(ModItems.ELIUM_INGOT);
         }
     }
 

@@ -12,8 +12,8 @@ import net.minecraftforge.common.ToolAction;
 
 import javax.annotation.Nullable;
 
-public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
-    public ModFlammableRotatedPillarBlock(Properties properties) {
+public class ModHatefulFlammableRotatedPillarBlock extends RotatedPillarBlock {
+    public ModHatefulFlammableRotatedPillarBlock(Properties properties) {
         super(properties);
     }
 
@@ -24,22 +24,22 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
     @Override
     public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-        return 5;
+        return 10;
     }
 
     @Override
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-        return 5;
+        return 10;
     }
 
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
         if (context.getItemInHand().getItem() instanceof AxeItem) {
-            if (state.is(ModBlocks.BANANA_TREE_WOOD.get())) {
-                return ModBlocks.BANANA_TREE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if (state.is(ModBlocks.HATEFUL_BANANA_TREE_WOOD.get())) {
+                return ModBlocks.HATEFUL_BANANA_TREE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
-            if (state.is(ModBlocks.MAGIC_BANANA_TREE_WOOD.get())) {
-                return ModBlocks.MAGIC_BANANA_TREE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if (state.is(ModBlocks.HATEFUL_MAGIC_BANANA_TREE_WOOD.get())) {
+                return ModBlocks.HATEFUL_MAGIC_BANANA_TREE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
         return super.getToolModifiedState(state, context, toolAction, simulate);

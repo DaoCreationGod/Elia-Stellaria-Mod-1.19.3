@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+    "textures": {
+      "all": "elia_stellaria_mod:block/elium_block"
+    }
+
+}

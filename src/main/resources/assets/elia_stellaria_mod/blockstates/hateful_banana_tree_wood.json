@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "elia_stellaria_mod:block/hateful_banana_tree_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "elia_stellaria_mod:block/hateful_banana_tree_wood"
+    },
+    "axis=z": {
+      "model": "elia_stellaria_mod:block/hateful_banana_tree_wood_horizontal",
+      "x": 90
+    }
+  }
+}

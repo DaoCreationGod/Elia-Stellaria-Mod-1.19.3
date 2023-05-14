@@ -1,6 +1,19 @@
 {
 
+   "item.elia_stellaria_mod.raw_elium": "Raw Elium",
+   "item.elia_stellaria_mod.elium_ingot": "Elium Ingot",
+
    "creativemodetab.elia_stellaria_mod_tab": "Elia Stellaria Mod Tab",
 
-   "block.elia_stellaria_mod.banana_tree_wood": "Banana Wood Log"
+   "block.elia_stellaria_mod.banana_tree_wood": "Banana Wood Log",
+   "block.elia_stellaria_mod.magic_banana_tree_wood": "Magic Banana Log",
+   "block.elia_stellaria_mod.fallen_star_block": "Fallen Star Stone",
+
+   "block.elia_stellaria_mod.elium_ore_block": "Elium Ore",
+   "block.elia_stellaria_mod.nether_elium_ore_block": "Nether Elium Ore",
+   "block.elia_stellaria_mod.deepslate_elium_ore_block": "Deepslate Elium Ore",
+
+   "block.elia_stellaria_mod.hateful_banana_tree_wood": "Hateful Banana Wood Log",
+   "block.elia_stellaria_mod.hateful_magic_banana_tree_wood": "Hateful Magic Banana Wood Log",
+   "block.elia_stellaria_mod.hateful_fallen_star_block": "Hateful Fallen Star Stone"
 }

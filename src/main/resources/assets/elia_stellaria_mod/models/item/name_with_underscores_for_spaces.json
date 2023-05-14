@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "elia_stellaria_mod:item/name_with_underscores_for_spaces"
-  }
-}

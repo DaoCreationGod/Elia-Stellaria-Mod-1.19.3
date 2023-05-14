@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "elia_stellaria_mod:block/deepslate_elium_ore_block"
+  }
+}

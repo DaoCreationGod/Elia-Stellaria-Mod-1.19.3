@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "elia_stellaria_mod:block/hateful_banana_tree_wood_top",
+    "side": "elia_stellaria_mod:block/hateful_banana_tree_wood_sides"
+  }
+}
