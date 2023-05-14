@@ -17,15 +17,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(EliaStellariaMod.MOD_ID)
-public class EliaStellariaMod {
+@Mod(EliaModIndex.MOD_ID)
+public class EliaModIndex {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "elia_stellaria_mod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "elia_stellaria_mod" namespace
 
-    public EliaStellariaMod() {
+    public EliaModIndex() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);

@@ -1,6 +1,6 @@
 package net.daocreationgod.eliastellariamod.block;
 
-import net.daocreationgod.eliastellariamod.EliaStellariaMod;
+import net.daocreationgod.eliastellariamod.EliaModIndex;
 import net.daocreationgod.eliastellariamod.block.custom.ModFlammableRotatedPillarBlock;
 import net.daocreationgod.eliastellariamod.block.custom.ModHatefulFlammableRotatedPillarBlock;
 import net.daocreationgod.eliastellariamod.item.ModItems;
@@ -19,7 +19,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
 
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, EliaStellariaMod.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, EliaModIndex.MOD_ID);
 
     //Wood and related blocks
     public static final RegistryObject<Block> BANANA_TREE_WOOD = registerBlock("banana_tree_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(2f).requiresCorrectToolForDrops()));

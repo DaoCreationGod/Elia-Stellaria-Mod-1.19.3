@@ -1,6 +1,6 @@
 package net.daocreationgod.eliastellariamod.item;
 
-import net.daocreationgod.eliastellariamod.EliaStellariaMod;
+import net.daocreationgod.eliastellariamod.EliaModIndex;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -8,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, EliaStellariaMod.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, EliaModIndex.MOD_ID);
 
 
     //Here we add the items
